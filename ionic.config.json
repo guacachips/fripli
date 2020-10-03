@@ -1,0 +1,7 @@
+{
+  "name": "fripli",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
