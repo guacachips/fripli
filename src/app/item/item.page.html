@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{pageTitle}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-button (click)="onClickGetItems()">Get items</ion-button>
+  </div>
+
+  <div class="item" *ngIf="item !== null">
+    <div class="item-photo">
+      <img [src]="item.image" alt="">
+    </div>
+    <div class="item-details">
+      <h2>{{item.title}}</h2>
+      <p>{{item.description}}</p>
+      <div class="item-details-row">
+        <span class="item-details-tag">{{item.price}} CAD</span>
+        <span class="item-details-tag">{{item.category}}</span>
+      </div>
+    </div>
+  </div>
+</ion-content>

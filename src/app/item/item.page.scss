@@ -1,0 +1,41 @@
+.item {
+  margin: 32px;
+  padding: 32px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &-photo {
+    padding: 8px;
+
+    img {
+      width: 150px;
+      height: 150px;
+      max-width: 150px;
+      max-height: 150px;
+      object-fit: cover;
+    }
+  }
+
+  &-details {
+    display: flex;
+    flex-direction: column;
+
+    &-row {
+      display: flex;
+    }
+
+    &-tag {
+      display: block;
+      padding: 8px;
+      background-color: deepskyblue;
+      color: black;
+      cursor: pointer;
+      width: 150px;
+      text-align: center;
+      margin-right: 8px;
+    }
+  }
+}
